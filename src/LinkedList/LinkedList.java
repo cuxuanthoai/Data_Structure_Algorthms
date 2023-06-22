@@ -22,14 +22,27 @@ public class LinkedList {
     }
 
     public  void getHead(){
-        System.out.println("head" + head.value);
+        System.out.println("head " + head.value);
     }
 
     public  void getTail(){
-        System.out.println("tail" + tail.value);
+        System.out.println("tail " + tail.value);
     }
     public  void getLength(){
-        System.out.println("length" + length);
+        System.out.println("length " + length);
+    }
+
+    public  void  append(int value){
+        Node newNode = new Node(value);
+        if (length ==0 ){
+            head = newNode ;
+            tail = newNode;
+        }
+        else {
+            tail.next = newNode;
+            tail = newNode;
+        }
+        length ++;
     }
 
 }
