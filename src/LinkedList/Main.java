@@ -14,5 +14,9 @@ public class Main {
         linkedList.getLength();
 
         linkedList.printList();
+
+        linkedList.prepend(7);
+
+        linkedList.printList();
     }
 }
